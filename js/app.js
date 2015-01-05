@@ -48,12 +48,9 @@ var urls = [{
 	url: 'http://www.androiduipatterns.com/'
 }];
 
-var books = [{
-
-}];
 
 App.Router.map(function() {
-  // put your routes here
+  this.resource('web', { path: '/websites'});
 });
 
 App.IndexRoute = Ember.Route.extend({
@@ -64,12 +61,7 @@ App.IndexRoute = Ember.Route.extend({
 
 App.WebRoute = Ember.Route.extend({
 	model: function() {
-		return urls;
+		return 'Hello World';
 	}
 });
 
-App.BookRoute = Ember.Route.extend({
-	model: function() {
-		return books;
-	}
-})

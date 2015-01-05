@@ -1,0 +1,9 @@
+  <script type="text/x-handlebars" id="web">
+    <h2>10 Android Tutorial Websites</h2>
+    <ul>
+    {{#each item in model}}
+      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {{/each}}
+    </ul>
+
+  </script>
